@@ -1,0 +1,23 @@
+pipeline {
+	agent any
+
+	stages {
+		stage("Dev"){
+			steps{
+		echo "Dev Merge"
+			}
+		}
+		stage("Unit Testing"){
+		steps{
+		echo "Dev QA"
+		}
+		}
+		stage("Functional Regression"){
+		steps{
+		echo "Automated Regresion"
+		}
+		}
+
+	}
+
+}
